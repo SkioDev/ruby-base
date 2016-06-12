@@ -9,7 +9,7 @@ ENV RUBY_VERSION=2.3.1 \
 # Install base utilities
 RUN \
   apt-get update && \
-  apt-get upgrade && \
+  apt-get upgrade -y && \
   apt-get install -y --no-install-recommends \
     wget \
     ca-certificates \
